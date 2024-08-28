@@ -1,0 +1,119 @@
+* {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 200vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  background-color: blueviolet;
+  position: sticky;
+  top: 0;
+}
+ul {
+  /* background-color: black; */
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+}
+li {
+  list-style-type: none;
+  color: white;
+}
+.boxes {
+  height: 400px;
+  width: 700px;
+  background-color: gray;
+  border: 2px solid brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-content: flex-start; wrap garda bich ma space generate hunxa tyo space lae handle garna align-content use hunxa */
+  flex-wrap: nowrap;
+}
+#box1 {
+  height: 100px;
+  width: 100px;
+  background: blue;
+  border: 2px solid brown;
+}
+
+#box2 {
+  height: 100px;
+  width: 100px;
+  background: yellowgreen;
+  border: 2px solid brown;
+  flex-shrink: 5;
+}
+
+#box3 {
+  height: 200px;
+  width: 50px;
+  background: white;
+  border: 2px solid brown;
+  flex-grow: 2;
+}
+
+#box4 {
+  height: 100px;
+  width: 100px;
+  background: green;
+  border: 2px solid brown;
+  flex-basis: 30%;
+}
+#box5 {
+  height: 100px;
+  width: 100px;
+  background: purple;
+  border: 2px solid brown;
+}
+
+#box6 {
+  height: 100px;
+  width: 100px;
+  background: pink;
+  border: 2px solid brown;
+}
+
+#box7 {
+  height: 50px;
+  width: 50px;
+  background: rgb(206, 78, 78);
+  border: 2px solid brown;
+  align-self: flex-end;
+}
+.displayProperty {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  background-color: brown;
+  border: 2px solid black;
+}
+
+#boxone {
+  background-color: aquamarine;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 280px;
+}
+#boxtwo {
+  background-color: rgb(174, 228, 138);
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  /* top: 100px; */
+}
+#boxthree {
+  background-color: rgb(154, 161, 159);
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 0;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form action="action.html" method="post" onsubmit="return Validation()">
+      username:
+      <input type="text" id="username" name="username" /><br />
+
+      Password:
+      <input type="password" id="password" name="password" /><br />
+      <input type="submit" value=" submit" id="submit" />
+      <div id="info"></div>
+    </form>
+    <script>
+      // javascript validation
+      //   function validateForm() {
+      // let password = document.getElementById("password").value;
+      // let submit = document.getElementById("submit");
+      // let info = document.getElementById("info");
+      // let infos = document.getElementById("infos");
+      // let username = document.getElementById("username").value;
+      // if (username == "" || password == "") {
+      //   info.innerHTML = "please enter the above information";
+      //   return false;
+      // } else if (username.length < 2 || username.length > 20) {
+      //   info.innerHTML = "please enter valid username";
+      //   return false;
+      // } else if (password.length < 4) {
+      //   info.innerHTML = "please enter valid password";
+      //   return false;
+      // } else {
+      //   return true;
+      // }
+      //   }
+
+      // jquery validation
+      $(document).ready(function () {
+        $("#submit").click(function () {
+          var usernameVal = $("#username").val();
+          var passwordVal = $("#password").val();
+          if (usernameVal === "") {
+            $("#info").html("enter your username");
+            return false;
+          } else if (usernameVal.length < 2 || usernameVal.length > 20) {
+            $("#info").html(
+              "username must be entered between  2 and 20 letters"
+            );
+            return false;
+          }
+
+          if (passwordVal === "") {
+            $("#info").html("enter your password");
+            return false;
+          } else if (passwordVal.length < 3) {
+            $("#info").html("enter the valid password");
+            return false;
+          } else {
+            return true;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
