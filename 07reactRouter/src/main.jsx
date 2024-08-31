@@ -15,6 +15,7 @@ import About from "./components/About/About.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import User from "./User/User.jsx";
 import Github from "./components/Github/Github.jsx";
+// import { Githubinfo } from "./components/Github/Github.jsx";
 
 // 1st way to create router
 const router = createBrowserRouter([
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "About",
+        path: "about",
         element: <About />,
       },
 
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "Github",
+        path: "github",
 
         element: <Github />,
       },
@@ -54,11 +55,10 @@ const router = createBrowserRouter([
 // const router = createBrowserRouter([
 //   createRoutesFromElements(
 //     <Route path="/" element={<Layout />}>
-//       <Route path="" element={<Home />} />
-//       <Route path="About" element={<About />} />
+//       <Route path="/" element={<Home />} />
+//       <Route path="about" element={<About />} />
 //       <Route path="contact" element={<Contact />} />
 //       <Route path="user/:Userid" element={<User />} />
-//       <Route path="/Github" element={<Github />} />
 //     </Route>
 //   ),
 // ]);

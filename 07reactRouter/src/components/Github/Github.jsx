@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 
-function Github() {
+export default function Github() {
+  // const { data } = useLoaderData();
   const [data, setData] = useState([]);
   useEffect(() => {
     fetch("https://api.github.com/users/riyashreesh")
@@ -21,4 +23,7 @@ function Github() {
   );
 }
 
-export default Github;
+// export const Githubinfo = async () => {
+//   const response = await fetch("https://api.github.com/users/riyashreesh");
+//   return response.json();
+// };

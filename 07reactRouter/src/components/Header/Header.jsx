@@ -48,7 +48,7 @@ export default function Header() {
 
               <li>
                 <NavLink
-                  to="/About"
+                  to="/about"
                   className={({ isActive }) =>
                     // navlink ley isActive vanne properties linxa and classname ma callback linxa jasley user ley afai dina milxa value haru
                     `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
@@ -76,7 +76,7 @@ export default function Header() {
 
               <li>
                 <NavLink
-                  to="/Github"
+                  to="/github"
                   className={({ isActive }) =>
                     // navlink ley isActive vanne properties linxa and classname ma callback linxa jasley user ley afai dina milxa value haru
                     `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 ${
