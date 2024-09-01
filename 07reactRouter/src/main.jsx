@@ -59,6 +59,14 @@ const router = createBrowserRouter([
 //       <Route path="about" element={<About />} />
 //       <Route path="contact" element={<Contact />} />
 //       <Route path="user/:Userid" element={<User />} />
+// <Route
+// loader = {()=>{
+
+// directly loader bhitra api call garna milxa
+//        }}
+//path ="github"
+// element ={<Github/>} />
+
 //     </Route>
 //   ),
 // ]);
